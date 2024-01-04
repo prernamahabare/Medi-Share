@@ -25,11 +25,12 @@ const userSchema = new mongoose.Schema({
         required: [true, "Enter the Role"],
     },
     medicines: {
-        type: { type: String },
-        value: [String]
+        // type: { type: String },
+        // value: [String]
+        type: String,
     }
 })
 
-const User = mongoose.model.medishareuser || mongoose.model("medishareuser", userSchema);
+const User = mongoose.models.medishareuser || mongoose.model("medishareuser", userSchema);
 
 export default User;

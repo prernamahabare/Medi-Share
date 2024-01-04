@@ -20,6 +20,6 @@ const medicineSchema =  new mongoose.Schema({
 
 })
 
-const Medicine = mongoose.model.medicines || mongoose.model('medicines', medicineSchema);
+const Medicine = mongoose.models.medicines || mongoose.model('medicines', medicineSchema);
 
 export default Medicine;
